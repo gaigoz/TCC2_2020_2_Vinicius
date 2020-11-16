@@ -1,360 +1,302 @@
- \chapter{\label{chap:intro}Resultados preliminares}
+ \chapter{\label{chap:intro}Análise Dos Resultados}
  
 
 
 
 
-\section{Entrevistas com especialistas}
+\section{Resultados da \textit{Survey}}
+
+Após a conclusão do processo de coleta dados, com o objetivo de entender quais são as preocupações de desenvolvedores de software móveis no desenvolvimento de aplicações, destaca-se nessa seção o resultado obtido na survey. A survey teve um total de 20 respondentes.
+
+O público que respondeu essa pesquisa tem em média 5 anos de experiência com desenvolvimento de aplicações  para dispositivos móveis e em sua maioria tem experiência com a plataforma Android. 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.9]{fig/plataformas.PNG}
+    \caption{Plataformas utilizadas pelos entrevistados}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.8]{figuras das questoes/1.1.PNG}
+\caption{Preocupo-me com o controle de acesso de usuários nos sistemas que desenvolvo.}
+\end{figure}
+
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.8]{figuras das questoes/1.2.PNG}
+\caption{Preocupo-me em criar ou utilizar funcionalidades que permitam o bloqueio, remoção ou desabilitação rápida de usuários no sistema (por exemplo, funcionários que deixaram a empresa).}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/1.3.png}
+\caption{Preocupo-me em desenvolver funções que permitam a alteração de permissão no
+sistema para todos os usuários, ou seja, que seja possível o gerenciamento de usuários.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/1.4.png}
+\caption{Preocupo-me em criar um registro central de direitos de acesso para cada usuário, ou seja, todos os usuários possuem um ID único.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.1.png}
+\caption{Preocupo-me em desenvolver funções que verifiquem a identidade de um usuário antes de fornecer uma informação de autenticação secreta, temporária, de substituição ou nova no sistema. (por exemplo e-mail de confirmação, SMS, aplicativos como Google autenticador).}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.2.png}
+\caption{Preocupo-me em aprimorar o desenvolvimento de funcionalidades com autenticação secreta para acessos e logins. (autenticação por 2 fatores).}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.3.png}
+\caption{Preocupo-me para que a Informação de autenticação secreta temporária seja única para uma pessoa e que não possa ser facilmente adivinhada.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.4.png}
+\caption{Preocupo-me em fornecer recursos para que o usuário consiga resguardar sua privacidade durante o processo de autenticação.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.5.png}
+\caption{Preocupo-me em não mostrar dados sensíveis do usuário (status, informações pessoais, etc.) de aplicações até que o processo de Log-on tenha sido concluído com sucesso.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.6.png}
+\caption{Preocupo-me em validar informações de entrada no sistema somente quando todos os dados de entrada estiverem completos.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.7.png}
+\caption{Caso ocorra um erro na validação das informações de entrada me preocupo em não identificar qual parte do dado de entrada está correto ou incorreto (Ex: “Sua senha está incorreta”).}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.8.png}
+\caption{Preocupo-me em proteger o sistema contra tentativas consecutivas/repetidas de entrada forçada.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.9.png}
+\caption{Preocupo-me em comunicar um evento de segurança caso uma tentativa potencial ou uma violação bem sucedida de entrada no sistema (log-on), seja detectada.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.10.png}
+\caption{Preocupo-me em encerrar sessões inativas após um período de inatividade.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.11.png}
+\caption{Preocupo-me em fazer sistemas que obriguem uma escolha de senha de qualidade, por exemplo, com no mínimo Oito Caracteres, misturar letras em caixa alta e baixa com números e caracteres não alfanuméricos).}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.12.png}
+\caption{Preocupo-me em desenvolver sistemas que obriguem usuário a mudarem as suas senhas temporárias no primeiro acesso ao sistema (Sistema que coloca sua senha inicial como data de aniversário ou dígitos do RG).}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/2.13.png}
+\caption{Preocupo-me em não permitir que a senhas possam ser mostradas na tela quando digitadas (Ex: Usar recurso do “olho” para revelar senha em um campo).}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/3.1.png}
+\caption{Preocupo-me com uso de criptografia para a proteção das informações sensíveis durante a comunicação em dispositivos móveis.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/3.2.png}
+\caption{Preocupo-me em gerar chaves para diferentes sistemas criptográficos e diferentes aplicações.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/4.1.png}
+\caption{Preocupo-me com os impactos na segurança da informação quando ocorre alguma mudança no sistema.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/4.2.png}
+\caption{Preocupo-me em criar mecanismos para atender o crescimento da aplicação e possibilitar suportar demanda variável de acessos.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/4.3.png}
+\caption{Preocupo-me para que dados sensíveis não sejam copiados para os ambientes de testes.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/5.1.png}
+\caption{Preocupo-me em criar mecanismos para registrar os eventos do sistema.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/5.2.png}
+\caption{Preocupo-me com datas, horários e detalhes de eventos-chave, como, por exemplo, horário de entrada (log-on) e saída (log-off) no sistema.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/5.3.png}
+\caption{Preocupo-me com a identificação do dispositivo ou sua localização quando possível e o identificador do sistema.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/5.4.png}
+\caption{Preocupo-me com registro de tentativas de acesso ao sistema, aceitas e rejeitadas.}
+\end{figure}
  
- Foram convidados, por conveniência,  dois especialista para participar desta avaliação, após a filtragem com os três pesquisadores para selecionar os controles presentes na ISO/IEC 27002, que fossem direcionados para a área da computação e elaborar perguntas referentes a cada controle da ISO/IEC 27002. Para que as perguntas sejam utilizadas na elaboração de um questionário com diversos desenvolvedores. Com a entrevista do especialista pretende-se examinar a qualidade das perguntas elaboradas e reformular-las se necessário. Os perfis destes especialistas são como segue:
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/5.5.png}
+\caption{Preocupo-me com a coleta dos endereços e protocolos de rede no log.}
+\end{figure}
  
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/5.6.png}
+\caption{Preocupo-me para que arquivos de log não sejam editados ou excluídos sem a devida autorização.}
+\end{figure}
+   
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.1.png}
+\caption{Preocupo-me em identificar falhas de segurança nas aplicações móveis que dou manutenção.}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.2.png}
+\caption{Respostas questão 6.2}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.3.png}
+\caption{Respostas questão 6.3}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.4.png}
+\caption{Respostas questão 6.4}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.5.png}
+\caption{Respostas questão 6.5}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.6.png}
+\caption{Respostas questão 6.6}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.7.png}
+\caption{Respostas questão 6.7}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.8.png}
+\caption{Respostas questão 6.8}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.9.png}
+\caption{Respostas questão 6.9}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.10.png}
+\caption{Respostas questão 6.11}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.11.png}
+\caption{Respostas questão 6.11}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.12.png}
+\caption{Respostas questão 6.12}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.13.png}
+\caption{Respostas questão 6.13}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.14.png}
+\caption{Respostas questão 6.14}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.15.png}
+\caption{Respostas questão 6.15}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.16.png}
+\caption{Respostas questão 6.16}
+\end{figure}
+
+\begin{figure}[!t]
+\centering
+\includegraphics[scale=0.7]{figuras das questoes/6.17.png}
+\caption{Respostas questão 6.17}
+\end{figure}
 \begin{itemize}
-
-\item  Especialista 1: O entrevistado é de Alvorada, RS, cidade da região metropolitana de Porto Alegre, já tendo atuado em outros países em projetos de tecnologias móveis, sendo desenvolvedor da área há 12 anos e atualmente como instrutor. Ao longo destes 12 anos, este especialista colaborou com os ECOS Android, iOS, Windows Phone e Blackberry.
-
-\item Especialista 2: O segundo entrevistado é de Manaus, AM, sendo professor e pesquisador com 10 anos de experiência na área, sendo 2 anos como desenvolvedor de aplicações, 4 anos como evangelista de desenvolvedores e 4 anos como pesquisador da área. Este especialista já colaborou nos ECOS Android, Windows Phone, Nokia e Symbian.
-
 %\item Especialista 2: Confirmou-se com o especialista que será realizada a entrevista para examinar a qualidade das perguntas elaboradas com o especialista 1.
 \end{itemize}
 
 
  
- \section{Aprofundamento do referencial teórico}
- 
- Com revisão da literatura deste trabalho foi possível aprofundar o conhecimento sobre a família da ISO 27000, mais especificamente sobre a ISO 27000, 27001 e 27002. Inicialmente começamos interpretando as seções e seus controles verificando a complexidade de cada uma no contexto de ecossistema de software móvel. Participaram das discussões 3 pesquisadores, com experiência nas áreas de auditoria,  metodologia e pequisa e ecossistemas de software móvel. Foram feitas reuniões de uma hora, conduzidas pelo autor deste trabalho e com isso foi possível eliminar as seções irrelevantes e manter outras.
 
  
- %Participaram das discussões 3 pesquisadores, com experiência nas áreas de auditoria, metodologia e pequisa e ecossistemas de software móvel. Foram feitas ao todo X reuniões de uma hora conduzidas pelo autor deste trabalho e com isso foi possível 
+
  
- A partir da filtragem de seções e controles com os professores, foi possível eliminar as Seções 5, 6, 7, 8, 11, 13, 15, 16, 17, 18 pois seus controles e objetivos de controle não se enquadravam no objetivo deste TCC, que  pretende ter como foco controles que se enquadrem no desenvolvimento de software mobile. Por exemplo, a Seção 7 trata Segurança dos Recursos Humanos. No entendimento do autor deste TCC e em alinhamento com o entendimento dos três pesquisadores que participaram das discussões nessa etapa inicial, entendeu-se que Seção está fora do escopo de desenvolvimento de software, pois trata de como evitar o vazamento de informações por colaboradores. Nas Figuras 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, 5.13 e 5.14 podem ser encontradas as seções retiradas na filtragem. 
- 
- As Seções 9, 10, 12, 14 foram mantidas e alguns de seus objetivos de controle retirados devido a análise conjunta dos participantes da discussão, e serão validadas futuramente com um especialista numa entrevista, para que assim seja possível elaborar a \textit{survey} e dar continuidade as etapas da metodologia de pesquisa do trabalho.  Nas figuras 5.1, 5.2, 5.3 e 5.4 estão representados os controles 
- 
-\subsubsection{Seções e controles mantidos:}
- 
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab1}Controle de Acesso(Mantida)}%
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{6}{|l|}{9 - \textbf{Controle de acesso}}                                                                                                                                                                                         \\ \hline
-\multicolumn{6}{|l|}{\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}9.2 -\textbf{ Gerenciamento de acesso do usuário}\\ Objetivo: Assegurar acesso de usuário autorizado e prevenir acesso \\ não autorizado a sistemas e serviços\end{tabular}}} \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                               \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                               \\ \hline
-\multicolumn{6}{|l|}{Registro e cancelamento de usuário}                                                                                                                                                                       \\ \hline
-\multicolumn{6}{|l|}{Provisionamento para acesso de usuário}                                                                                                                                                                   \\ \hline
-\multicolumn{6}{|l|}{Gerenciamento de direitos de acesso privilégiados}                                                                                                                                                        \\ \hline
-\multicolumn{6}{|l|}{Gerenciamento da informação de autenticação secreta de usuários}                                                                                                                                         \\ \hline
-\multicolumn{6}{|l|}{\begin{tabular}[c]{@{}l@{}}9.3 - \textbf{Responsabilidades dos usuários}\\ Objetivo: Tornar os usuários responsáveis pela proteção\\ das suas informações de autenticação.\end{tabular}}                   \\ \hline
-\multicolumn{6}{|l|}{9.3.1 Uso da informação de autenticação secreta}                                                                                                                                                                \\ \hline
-\multicolumn{6}{|l|}{\begin{tabular}[c]{@{}l@{}}9.4 - \textbf{Controle de acesso ao sistema e à aplicação}\\ Objetivo: Prevenir o acesso não autorizado aos sistemas e aplicações.\end{tabular}}                                      \\ \hline
-\multicolumn{6}{|l|}{Restrição de acesso à informação}                                                                                                                                                                         \\ \hline
-\multicolumn{6}{|l|}{Procedimentos seguros de entrada no sistema (logon)}                                                                                                                                                      \\ \hline
-\multicolumn{6}{|l|}{Sistema de gerenciamento de senha}                                                                                                                                                                        \\ \hline
-\multicolumn{6}{|l|}{Controle de acesso ao código-fonte de programas}                                                                                                                                                          \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab2}Criptografia(Mantida)}%
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{6}{|l|}{10 - \textbf{Criptografia}}                                                                                                                                                                                                                           \\ \hline
-\multicolumn{6}{|l|}{\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}10.1 
-\textbf{Controles criptográficos}
-\\ Objetivo: Assegurar o uso efetivo e adequado da criptografia para proteger \\ 
-a confidencialidade, autenticidade e/ou a integridade da informação.
-\end{tabular}}} \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                            \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                            \\ \hline
-\multicolumn{6}{|l|}{Política para o uso de controles criptográficos}                                                                                                                                                                                      \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab3}Segurança nas Operações(Mantida)}%
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{6}{|l|}{12 -\textbf{ Segurança nas Operações}}                                                                                                                                                                                   \\ \hline
-\multicolumn{6}{|l|}{\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}12.1 - \textbf{Responsabilidades e procedimentos operacionais}\\ Objetivo: Garantir a operação segura e correta dos recursos de\\ processamento da informação.\end{tabular}}} \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                               \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                               \\ \hline
-\multicolumn{6}{|l|}{Gestão de mudanças}                                                                                                                                                                                      \\ \hline
-\multicolumn{6}{|l|}{Gestão de capacidade}                                                                                                                                                                                    \\ \hline
-\multicolumn{6}{|l|}{Separação dos ambientes de desenvolvimento, teste e de produção}                                                                                                                                         \\ \hline
-\multicolumn{6}{|l|}{\begin{tabular}[c]{@{}l@{}}12.2 \textbf{Proteção contra \textit{malware}}\\ Objetivo: Assegurar que as informações e os recursos de processamento\\ da informação estão protegidos contra malware.\end{tabular}}                  \\ \hline
-\multicolumn{6}{|l|}{ Controles contra malware}                                                                                                                                                                                \\ \hline
-\multicolumn{6}{|l|}{\begin{tabular}[c]{@{}l@{}}12.4 \textbf{Registros e monitoramento}\\ Objetivo: Registrar eventos e gerar evidências.\end{tabular}}                                                                                       \\ \hline
-\multicolumn{6}{|l|}{Registros de eventos}                                                                                                                                                                                    \\ \hline
-\multicolumn{6}{|l|}{ Proteção das informações dos registros de eventos (logs)}                                                                                                                                                \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab4}Aquisição, Desenvolvimento e Manutenção de Sistemas(Mantida)}%
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{6}{|l|}{14 - \textbf{Aquisição, desenvolvimento e manutenção de sistemas}}                                                                                                                                                                                                                                                                                                   \\ \hline
-\multicolumn{6}{|l|}{\multirow{6}{*}{\begin{tabular}[c]{@{}l@{}}14.1 \textbf{Requisitos de segurança de sistemas de informação}\\ Objetivo: Garantir que a segurança da informação é parte integrante de todo o \\ ciclo de vida dos sistemas de informação. Isto também inclui os requisitos para\\ sistemas de informação que fornecem serviços sobre as redes públicas.\end{tabular}}} \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\ \hline
-\multicolumn{6}{|l|}{ Análise e especificação dos requisitos de segurança da informação}                                                                                                                                                                                                                                                                                   \\ \hline
-\multicolumn{6}{|l|}{ Serviços de aplicação seguros sobre redes públicas}                                                                                                                                                                                                                                                                                                  \\ \hline
-\multicolumn{6}{|l|}{ Protegendo as transações nos aplicativos de serviços}                                                                                                                                                                                                                                                                                                \\ \hline
-\multicolumn{6}{|l|}{\multirow{4}{*}{\begin{tabular}[c]{@{}l@{}}14.2 \textbf{Segurança em processos de desenvolvimento e de suporte}\\ Objetivo: Garantir que a segurança da informação está projetada e\\ implementada no ciclo de vida de desenvolvimento dos sistemas de informação.\end{tabular}}}                                                                                    \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\ \hline
-\multicolumn{6}{|l|}{Política de desenvolvimento seguro depende da ótica}                                                                                                                                                                                                                                                                                                 \\ \hline
-\multicolumn{6}{|l|}{Procedimentos para controle de mudanças de sistemas}                                                                                                                                                                                                                                                                                                 \\ \hline
-\multicolumn{6}{|l|}{\begin{tabular}[c]{@{}l@{}}14.2.3 Análise crítica técnica das aplicações após mudanças nas\\ plataformas operacionais\end{tabular}}                                                                                                                                                                                                                         \\ \hline
-\multicolumn{6}{|l|}{ Restrições sobre mudanças em pacotes de Software}                                                                                                                                                                                                                                                                                                    \\ \hline
-\multicolumn{6}{|l|}{ Princípios para projetar sistemas seguros}                                                                                                                                                                                                                                                                                                           \\ \hline
-\multicolumn{6}{|l|}{Ambiente seguro para desenvolvimento}                                                                                                                                                                                                                                                                                                                \\ \hline
-\multicolumn{6}{|l|}{ Teste de segurança do sistema}                                                                                                                                                                                                                                                                                                                       \\ \hline
-\multicolumn{6}{|l|}{ Teste de aceitação de sistemas}                                                                                                                                                                                                                                                                                                                      \\ \hline
-\multicolumn{6}{|l|}{\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}14.3 \textbf{Dados para teste}\\ Objetivo: Assegurar a proteção dos dados usados para teste\end{tabular}}}                                                                                                                                                                                                                \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\
-\multicolumn{6}{|l|}{}                                                                                                                                                                                                                                                                                                                                                           \\ \hline
-\multicolumn{6}{|l|}{14.3.1 Proteção dos dados para teste}                                                                                                                                                                                                                                                                                                                       \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
- 
- 
- 
-\begin{table}[]
-\begin{tabular}{l}
-Seções retiradas na filtragem:
-\end{tabular}
-\end{table}
-
-
-% REPROVADAS--------------------REPROVADAS------------------------REPROVADAS--------------------REPROVADAS------------------REPROVADAS-------------
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab5}Políticas de Segurança da Informação(Removida)}%
-\begin{tabular}{|l|}
-\hline
-5 - \textbf{Políticas de segurança da informação }                          \\ \hline
-5.1\textbf{ Orientação da direção para segurança da informação} \\
-Objetivo: Prover orientação da direção e apoio para a  segurança da informação \\ de acordo
-com os requisitos do negócio e com as leis e regulamentações relevantes            \\ \hline
- Políticas para segurançada informação                      \\ \hline
- Análise crítica das políticas para segurança da informação \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-%----------------------------------------------------------------------------------------------------------------------------
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab6} Organização da Segurança da Informação(Removida)}%
-\begin{tabular}{|l|l|l|}
-\hline
-\multicolumn{3}{|l|}{6 - \textbf{Organização da segurança da informação}}                                                                                                                                                                                        \\ \hline
-\multicolumn{3}{|l|}{\begin{tabular}[c]{@{}l@{}}6.1\textbf{ Organização interna}\\ Objetivo: Estabelecer uma estrutura de gerenciamento, \\ para iniciar e controlar a implementação e operação\\ da segurança da informação dentro da organização\end{tabular}} \\ \hline
-\multicolumn{3}{|l|}{ Responsabilidades e papéis pela segurança da informação}                                                                                                                                                                           \\ \hline
-\multicolumn{3}{|l|}{ Segregação de funções}                                                                                                                                                                                                             \\ \hline
-\multicolumn{3}{|l|}{ Contato com autoridades}                                                                                                                                                                                                           \\ \hline
-\multicolumn{3}{|l|}{ Contato com grupos especiais}                                                                                                                                                                                                      \\ \hline
-\multicolumn{3}{|l|}{Segurança da informação no gerenciamento de projetos}                                                                                                                                                                              \\ \hline
-\multicolumn{3}{|l|}{\begin{tabular}[c]{@{}l@{}}6.2 \textbf{Dispositivos móveis e trabalho remoto}\\ Objetivo: Garantir a segurança das informações\\  no trabalho remoto e no uso de dispositivos móveis.\end{tabular}}                                         \\ \hline
-\multicolumn{3}{|l|}{Política para o uso de dispositivo móvel}                                                                                                                                                                                          \\ \hline
-\multicolumn{3}{|l|}{Trabalho remoto}                                                                                                                                                                                                                   \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-%----------------------------------------------------------------------------------------------------------------------------
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab7} Segurança em Recursos Humanos(Removida}%
-\begin{tabular}{|l|}
-\hline
-7 - \textbf{Segurança em recursos humanos}                                                                                                                                                                                                             \\ \hline
-\begin{tabular}[c]{@{}l@{}}7.1\textbf{ Antes da contratação}\\ Objetivo: Assegurar que funcionários e partes externas entendem as\\ suas responsabilidades e estão em conformidade\\ com os papéis para os quais eles foram selecionados.\end{tabular} \\ \hline
-Seleção                                                                                                                                                                                                                                       \\ \hline
-Termos e condições de contratação                                                                                                                                                                                                             \\ \hline
-\begin{tabular}[c]{@{}l@{}}7.2 \textbf{Durante a contratação}\\ Objetivo: Assegurar que os funcionários e partes externas\\ estão conscientes e cumprem as suas responsabilidades\\ pela segurança da informação.\end{tabular}                         \\ \hline
-Responsabilidades da direção                                                                                                                                                                                                                  \\ \hline
-Conscientização,educação e treinamento em segurança da informação                                                                                                                                                                             \\ \hline
-Processo disciplinar                                                                                                                                                                                                                          \\ \hline
-\begin{tabular}[c]{@{}l@{}}7.3 \textbf{Encerramento e mudança da contratação}\\ Objetivo: Proteger os interesses da organização como\\ parte do processo de mudança ou encerramento da contratação.\end{tabular}                                       \\ \hline
-\begin{tabular}[c]{@{}l@{}}Responsabilidades pelo encerramento ou mudança da contratação\end{tabular}                                                                                                                                       \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-%----------------------------------------------------------------------------------------------------------------------------
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab8} Gestão de Ativos(Removida)}%
-\begin{tabular}{|l|}
-\hline
-8 - \textbf{Gestão de ativos }                                                                                                                                                                                       \\ \hline
-\begin{tabular}[c]{@{}l@{}}8.1. \textbf{Responsabilidade pelos ativos}\\  Objetivo: Identificar os ativos da organização e definir\\ as devidas responsabilidades pela proteção dos ativos.\end{tabular}           \\ \hline
-Seleção                                                                                                                                                                                                     \\ \hline
-Inventário dos ativos                                                                                                                                                                                       \\ \hline
-Proprietário dos ativos                                                                                                                                                                                     \\ \hline
-Uso aceitável dos ativos                                                                                                                                                                                    \\ \hline
-Devolução de ativos                                                                                                                                                                                         \\ \hline
-\begin{tabular}[c]{@{}l@{}}8.2 \textbf{Classificação da informação}\\  Objetivo: Assegurar que a informação receba\\ um nível adequado de proteção, de acordo com\\ a sua importância para a organização\end{tabular} \\ \hline
-Classificação da informação                                                                                                                                                                                 \\ \hline
-Rótulos e tratamento da informação                                                                                                                                                                          \\ \hline
-Tratamento dos ativos                                                                                                                                                                                       \\ \hline
-\begin{tabular}[c]{@{}l@{}}8.3 \textbf{Tratamento de mídias}\\  Objetivo: Prevenir a divulgação não autorizada,\\ modificação, remoção ou destruição da informação\\ armazenada nas mídias.\end{tabular}              \\ \hline
-Gerenciamento de mídias removíveis                                                                                                                                                                          \\ \hline
-Descarte de mídias                                                                                                                                                                                          \\ \hline
-Transferência física de mídias                                                                                                                                                                              \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-%----------------------------------------------------------------------------------------------------------------------------
-
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab9}Segurança Física e do Ambiente(Removida)}%
-\begin{tabular}{|l|}
-\hline
-11 \textbf{Segurança física e do ambiente}                                                                                                                                                                                            \\ \hline
-\begin{tabular}[c]{@{}l@{}}11.1 Áreas seguras\\ Objetivo: Prevenir o acesso físico não autorizado, danos\\ e interferências com os recursos de processamento das\\ informações e as informações da organização.\end{tabular} \\ \hline
-10.1.2 Gerenciamento de chaves                                                                                                                                                                                               \\ \hline
-Perímetro de segurança física                                                                                                                                                                                                \\ \hline
-Controles de entrada física                                                                                                                                                                                                  \\ \hline
-Segurança em escritórios, salas e instalações                                                                                                                                                                                \\ \hline
-Proteção contra ameaças externas e do meioambiente                                                                                                                                                                           \\ \hline
-Trabalhando em áreas seguras                                                                                                                                                                                                 \\ \hline
-Áreas de entrega e de carregamento                                                                                                                                                                                           \\ \hline
-\begin{tabular}[c]{@{}l@{}}11.2 \textbf{Equipamentos}\\ Objetivo: Impedir perdas, danos, furto ou roubo, ou comprometimento\\ de ativos e interrupção das operações da organização\end{tabular}                                       \\ \hline
-Escolha de local e proteção do equipamento                                                                                                                                                                                   \\ \hline
-Utilidades                                                                                                                                                                                                                   \\ \hline
-Segurança do cabeamento                                                                                                                                                                                                      \\ \hline
-Manutenção dos equipamentos                                                                                                                                                                                                  \\ \hline
-Remoção de ativos                                                                                                                                                                                                            \\ \hline
-\begin{tabular}[c]{@{}l@{}}Segurança de equipamentos e ativos fora\\ das dependências da organização\end{tabular}                                                                                                            \\ \hline
-Reutilização e alienação seguras de equipamento                                                                                                                                                                              \\ \hline
-Equipamento de usuário sem monitoração                                                                                                                                                                                       \\ \hline
-Política de mesa limpa e tela limpa                                                                                                                                                                                          \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-%----------------------------------------------------------------------------------------------------------------------------
-
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab10}Segurança nas Comunicações(Removida)}%
-\begin{tabular}{|l|}
-\hline
-13 - \textbf{Segurança nas comunicações }                                                                                                                                                                         \\ \hline
-\begin{tabular}[c]{@{}l@{}}13.1 \textbf{Gerenciamento da segurança em redes}\\ Objetivo: Assegurar a proteção das informações em redes\\ e dos recursos de processamento da informação que os apoiam\end{tabular} \\ \hline
-Controles de redes                                                                                                                                                                                       \\ \hline
-Segurança dos serviços de rede                                                                                                                                                                           \\ \hline
-Segregação de redes                                                                                                                                                                                      \\ \hline
-\begin{tabular}[c]{@{}l@{}}13.2 \textbf{Transferência de informação}\\ Objetivo: Manter a segurança da informação transferida dentro\\ da organização e com quaisquer entidades externas\end{tabular}             \\ \hline
-Políticas e procedimentos  para transferência de informações                                                                                                                                             \\ \hline
-Acordos para transferência de informações                                                                                                                                                                \\ \hline
-Mensagens eletrônicas                                                                                                                                                                                    \\ \hline
-Acordos de confidencialidade e não divulgação                                                                                                                                                            \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-%----------------------------------------------------------------------------------------------------------------------------
-
-
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab11}Relacionamento na Cadeia de Suprimento(Removida)}%
-\begin{tabular}{|l|}
-\hline
-15 \textbf{Relacionamento na cadeia de suprimento}                                                                                                                                                                                                 \\ \hline
-\begin{tabular}[c]{@{}l@{}}15.1 \textbf{Segurança da informação na cadeia de suprimento}\\ Objetivo: Garantir a proteção dos ativos da organização que\\ são acessíveis pelos fornecedores\end{tabular}                                           \\ \hline
-\begin{tabular}[c]{@{}l@{}}Política de segurança da informação\\ no relacionamento com os fornecedores\end{tabular}                                                                                                                       \\ \hline
-\begin{tabular}[c]{@{}l@{}}Identificando segurança da informação\\ nos acordos com fornecedores\end{tabular}                                                                                                                              \\ \hline
-\begin{tabular}[c]{@{}l@{}}Cadeia de suprimento na tecnologia\\  da comunicação e informaçã\end{tabular}                                                                                                                                  \\ \hline
-\begin{tabular}[c]{@{}l@{}}15.2\textbf{ Gerenciamento da entrega do serviço do fornecedor}\\ Objetivo: Manter um nível acordado de segurança da informação\\  e de entrega de serviços em consonância com os acordos com fornecedores\end{tabular} \\ \hline
-Monitoramento e análise crítica de serviços com fornecedores                                                                                                                                                                              \\ \hline
-Gerenciamento de mudanças para serviços com fornecedores                                                                                                                                                                                  \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-%----------------------------------------------------------------------------------------------------------------------------
-
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab12}Gestão de Incidentes de Segurança da Informação(Removida)}%
-\begin{tabular}{|l|}
-\hline
-16 \textbf{Gestão de incidentes de segurança da informação}                                                                                                                                                                                                                                                           \\ \hline
-\begin{tabular}[c]{@{}l@{}}16.1 \textbf{Gestão de incidentes de segurança da informação e melhorias}\\ \\Objetivo: Assegurar um enfoque consistente e efetivo para gerenciar\\ os incidentes de segurança da informação, incluindo a comunicação\\ sobre fragilidades e eventos de segurança da informação\end{tabular} \\ \hline
-Responsabilidades e procedimentos                                                                                                                                                                                                                                                                            \\ \hline
-Notificação de eventos de segurança da informação                                                                                                                                                                                                                                                            \\ \hline
-Notificando fragilidades de segurança da informação                                                                                                                                                                                                                                                          \\ \hline
-Avaliação e decisão dos eventos de segurança da informação                                                                                                                                                                                                                                                   \\ \hline
-Resposta aos incidentes de segurança da informação                                                                                                                                                                                                                                                           \\ \hline
-Aprendendo com os incidentes de segurança da informação                                                                                                                                                                                                                                                      \\ \hline
-Coleta de evidências                                                                                                                                                                                                                                                                                         \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-%----------------------------------------------------------------------------------------------------------------------------
-
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab13}Aspectos da Segurança da Informação na Gestão da Continuidade do Negócio(Removida)}%
-\begin{tabular}{|l|}
-\hline
-17 -\textbf{ Aspectos da segurança da informação na gestão da continuidade do negócio}                                                                                                                                                       \\ \hline
-\begin{tabular}[c]{@{}l@{}}17.1 \textbf{Continuidade da segurança da informação}\\ Objetivo: A continuidade da segurança da informação deve ser contemplada\\ nos sistemas de gestão da continuidade do negocio da organização.\end{tabular} \\ \hline
-Planejando a continuidade da segurança da informação                                                                                                                                                                                \\ \hline
-Implementando a continuidade da segurança da informação                                                                                                                                                                             \\ \hline
-\begin{tabular}[c]{@{}l@{}}Verificação, análise crítica e avaliação da \\ continuidade da segurança da informação\end{tabular}                                                                                                      \\ \hline
-\begin{tabular}[c]{@{}l@{}}17.2 \textbf{Redundâncias}\\ Objetivo: Assegurar a disponibilidade dos recursos de processamento da informação.\end{tabular}                                                                                      \\ \hline
-Disponibilidade dos recursos de processamento da informação                                                                                                                                                                         \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-%----------------------------------------------------------------------------------------------------------------------------
-
-
-\begin{table}[]
-\begin{center}
-\caption{\label{tab:tab14}Conformidade(Removida)}%
-\begin{tabular}{|l|}
-\hline
-18 - \textbf{Conformidade}                                                                                                                                                                                                                                                                       \\ \hline
-\begin{tabular}[c]{@{}l@{}}18.1\textbf{ Conformidade com requisitos legais e contratuais}\\ Objetivo:Evitar violação de quaisquer obrigações legais, estatutárias, \\ regulamentares ou contratuais relacionadas á segurança da informação\\ e de quaisquer requisitos de segurança\end{tabular} \\ \hline
-Identificação da legislação aplicável e de requisitos contratuais                                                                                                                                                                                                                       \\ \hline
-Direitos de propriedade intelectual                                                                                                                                                                                                                                                     \\ \hline
-Proteção de registros                                                                                                                                                                                                                                                                   \\ \hline
-Proteção e privacidade de informações de identificação de pessoal                                                                                                                                                                                                                       \\ \hline
-Regulamentação de controles de criptografia                                                                                                                                                                                                                                             \\ \hline
-\begin{tabular}[c]{@{}l@{}}18.2 \textbf{Análise crítica da segurança da informação}\\ Objetivo: Garantir que a segurança da informação está implementada\\ e operada de acordo com as politicas e procedimentos da organização.\end{tabular}                                                     \\ \hline
-Análise crítica independente da segurança da informação                                                                                                                                                                                                                                 \\ \hline
-Conformidade com as políticas e normas de segurança da informação                                                                                                                                                                                                                       \\ \hline
-Análise crítica da conformidade técnica                                                                                                                                                                                                                                                 \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
