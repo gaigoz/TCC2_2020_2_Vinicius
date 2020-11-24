@@ -74,9 +74,9 @@
 % escolhido. Os títulos são utilizados para a montagem da capa,
 % resumo e abstract mais tarde.
 %----------------------------------------------------------------
-\title{Adoção de práticas de segurança da ISO 27000  por desenvolvedores de Software Mobile}
+\title{Estudando a Adoção de Práticas de Segurança Propostas pela ISO 27002 por Desenvolvedores de Software Móvel}
      {Your title in english here}
-
+%Adoção de práticas de segurança da ISO 27000  por desenvolvedores de Software Mobile
 %----------------------------------------------------------------
 % Opções para o tipo de trabalho (OBRIGATÓRIO)
 %----------------------------------------------------------------
@@ -96,7 +96,7 @@
 % Orientador (e Co-orientador, caso haja um). É OBRIGATÓRIO
 % informar pelo menos o orientador.
 %----------------------------------------------------------------
-\orientador{MSc Azriel Majdenbaum}
+\orientador{Dr Azriel Majdenbaum}
 \coorientador{PhD Sabrina Marczak}
 
 
@@ -109,10 +109,10 @@
 %----------------------------------------------------------------
 % Depois da capa vem a dedicatória e a epígrafe.
 %----------------------------------------------------------------
-\dedicatoria{Dedico este trabalho a meus pais.}
+%\dedicatoria{}
 
-\epigrafe{The art of simplicity is a puzzle of complexity.}
-         {Douglas Horton}
+\epigrafe{Quando atingimos o nosso ponto mais baixo é quando estamos abertos para a maior mudança.}
+        {Aang}
 
 %----------------------------------------------------------------
 % Também dá para fazer as duas na mesma página:
@@ -125,18 +125,17 @@
 % A seguir, a página de agradecimentos (OPCIONAL):
 %----------------------------------------------------------------
 \begin{agradecimentos}
-%AGRADECIMENTOS AQUI
+Em primeiro lugar gostaria de agradecer aos meus professores Azriel Majdenbaum e Sabrina Marczak por me ajudarem nesse processo ao longo deste ano, atípico para todos nós. Foram inúmeras reuniões, sempre com foco e um clima bem humorado, o que era necessário. Gostaria de fazer um agradecimento especial ao aluno de doutorado Caio Steglich, que participou como colaborador da pesquisa. O Caio sempre se demonstrou disposto em ajudar nos momentos que fossem necessários, em finais de semana, feriados, dias de semana, sempre realizando críticas ótimas para o desenvolvimento do trabalho ratificando dedicação e amizade.
 \end{agradecimentos}
 
 %----------------------------------------------------------------
 % Resumo, com as palavras-chave passadas por parâmetro
 % (OBRIGATÓRIO, ao menos para teses e dissertações)
 %----------------------------------------------------------------
-\begin{resumo}{Segurança da Informação,Família ISO 27000, ISO 27002, Controles de Segurança, Desenvolvimento \textit{mobile}, \textit{Survey}}
-
- A Segurança da Informação é uma área importante da computação que se vale de guias e padrões para garantir a segurança de sistemas de software. Por meio da norma ISO 27001, é possível elaborar um Sistema de Gerenciamento da Segurança da Informação que busca reduzir os riscos de vulnerabilidade que comprometam os ativos de informação. Adotar as especificações dessa norma é um desafio, seja pelo desconhecimento de sua importância ou pela falta de entendimento de seus controles. Este Trabalho de Conclusão de Curso visa identificar por meio de uma \textit{survey} quais são os controles da ISO 27002 adotados no desenvolvimento de \textit{software} \textit{mobile} e quais são as dificuldades ao tentar adotá-los, de forma a sugerir um conjunto de recomendações de uso para suprir essas dificuldades. Para se atingir o objetivo desde TCC, foi utilizada a revisão da literatura de Steglich e colegas \cite{caio2019} neste mesmo tema como inspiração, estudou-se em profundidade os controles da ISO 27002 com o objetivo de selecionar os constructos de referência para a definição do questionário da \textit{survey} em questão.  A seleção desses controles da ISO 27002, foram discutidos com três pesquisadores que acompanharam este Trabalho e foram validados com especialistas, em um estudo baseado em entrevistas. Os resultados da \textit{survey} foram analisados com objetivo de quais questões os desenvolvedores de dispositivos móveis levavam em consideração na hora de criar uma aplicação.
+\begin{resumo}{Segurança da Informação, Família ISO 27000, ISO 27002, Controles de Segurança, Desenvolvimento \textit{mobile}, \textit{Survey}}
+ \vspace{-0.5cm}
+ A Segurança da Informação é uma área importante da computação que se vale de guias e padrões para garantir a segurança de sistemas de software. Por meio da norma ISO 27001, é possível elaborar um Sistema de Gerenciamento da Segurança da Informação que busca reduzir os riscos de vulnerabilidade que comprometam os ativos de informação, em especial em organizações que lidam com tecnologia da informação. Adotar as especificações dessa norma é um desafio, seja pelo desconhecimento de sua importância ou pela falta de entendimento por parte dos desenvolvedores. Este Trabalho de Conclusão de Curso visa identificar por meio de uma \textit{survey} quais são os controles da ISO 27002 mais ou menos adotados no desenvolvimento de \textit{software} \textit{mobile}. Para se atingir o objetivo desde TCC, foi utilizada a revisão da literatura de Steglich e colegas \cite{caio2019} neste mesmo tema como inspiração, estudou-se em profundidade os controles da ISO 27002 com o objetivo de selecionar os constructos de referência para a definição do questionário da \textit{survey} em questão.  A seleção desses controles da ISO 27002, foram discutidos entre três pesquisadores que acompanharam este Trabalho e foram validados com especialistas, em um estudo baseado em entrevistas. Os resultados da \textit{survey} foram analisados com objetivo de quais questões os desenvolvedores de dispositivos móveis levavam em consideração na hora de criar uma aplicação.
  
- \todo[inline]{como ficou?}
 
  
  %como próximo passo, foram validados com especialistas, em um estudo baseado em entrevistas. Os resultados da \textit{survey} servirão de base para a definição de um conjunto de recomendações para desenvolvedores \textit{mobile}, a serem disponibilizadas de forma online para consulta da comunidade.     
@@ -179,7 +178,10 @@
 \include{3_Proposta}
 \include{4_Metodologia}
 \include{5_Consideracoes}
+\include{Discussão}
 \include{6_Conclusão}
+
+
 
 
 %----------------------------------------------------------------
@@ -198,17 +200,16 @@
 % numeração alfabética.
 %----------------------------------------------------------------
 \appendix
+
 \chapter{SURVEY - Instrumento de Coleta}
 \includepdf[pages={1-26}]{SURVEY.pdf}
+
 \chapter{Seções Mantidas e Retiradas}
-
-
-
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 \begin{table}[] % FAZER PARA TODAS AS TABELAS
 \begin{center}
-\caption{\label{tab:tab1}Controle de Acesso(Mantida)}%
+\caption{\label{tab:tab1}Controle de Acesso(Reduzida)}%
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
 \multicolumn{6}{|l|}{9 - \textbf{Controle de acesso}}                                                                                                                                                                                         \\ \hline
@@ -235,7 +236,7 @@
 
 \begin{table}[]
 \begin{center}
-\caption{\label{tab:tab2}Criptografia(Mantida)}%
+\caption{\label{tab:tab2}Criptografia(Reduzida)}%
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
 \multicolumn{6}{|l|}{10 - \textbf{Criptografia}}                                                                                                                                                                                                                           \\ \hline
@@ -255,7 +256,7 @@ a confidencialidade, autenticidade e/ou a integridade da informação.
 % \usepackage{multirow}
 \begin{table}[!t]
 \begin{center}
-\caption{\label{tab:tab3}Segurança nas Operações(Mantida)}%
+\caption{\label{tab:tab3}Segurança nas Operações(Reduzida)}%
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
 \multicolumn{6}{|l|}{12 -\textbf{ Segurança nas Operações}}                                                                                                                                                                                   \\ \hline
@@ -278,7 +279,7 @@ a confidencialidade, autenticidade e/ou a integridade da informação.
 % \usepackage{multirow}
 \begin{table}[!t]
 \begin{center}
-\caption{\label{tab:tab4}Aquisição, Desenvolvimento e Manutenção de Sistemas(Mantida)}%
+\caption{\label{tab:tab4}Aquisição, Desenvolvimento e Manutenção de Sistemas(Reduzida)}%
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
 \multicolumn{6}{|l|}{14 - \textbf{Aquisição, desenvolvimento e manutenção de sistemas}}                                                                                                                                                                                                                                                                                                   \\ \hline
@@ -359,7 +360,7 @@ com os requisitos do negócio e com as leis e regulamentações relevantes      
 %----------------------------------------------------------------------------------------------------------------------------
 \begin{table}[!t]
 \begin{center}
-\caption{\label{tab:tab7} Segurança em Recursos Humanos(Removida}%
+\caption{\label{tab:tab7} Segurança em Recursos Humanos(Removida)}%
 \begin{tabular}{|l|}
 \hline
 7 - \textbf{Segurança em recursos humanos}                                                                                                                                                                                                             \\ \hline
@@ -413,7 +414,7 @@ Transferência física de mídias                                               
 Perímetro de segurança física                                                                                                                                                                                                \\ \hline
 Controles de entrada física                                                                                                                                                                                                  \\ \hline
 Segurança em escritórios, salas e instalações                                                                                                                                                                                \\ \hline
-Proteção contra ameaças externas e do meioambiente                                                                                                                                                                           \\ \hline
+Proteção contra ameaças externas e do meio ambiente                                                                                                                                                                           \\ \hline
 Trabalhando em áreas seguras                                                                                                                                                                                                 \\ \hline
 Áreas de entrega e de carregamento                                                                                                                                                                                           \\ \hline
 \begin{tabular}[c]{@{}l@{}}11.2 \textbf{Equipamentos}\\ Objetivo: Impedir perdas, danos, furto ou roubo, ou comprometimento\\ de ativos e interrupção das operações da organização\end{tabular}                                       \\ \hline
@@ -536,9 +537,9 @@ Análise crítica da conformidade técnica                                      
 % Aqui vão os "capítulos" de anexos. Cada anexo deve
 % ser considerado um capítulo.
 %----------------------------------------------------------------
-\anexos
-\chapter{Meu primeiro anexo}
-\chapter{My second attachment}
+%\anexos
+%\chapter{Meu primeiro anexo}
+%\chapter{My second attachment}
 
 % E aqui (para a felicidade de todos) termina o documento.
 \end{document}

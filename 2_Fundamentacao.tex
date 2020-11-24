@@ -5,7 +5,7 @@
 De acordo com a definição presente na ISO 27000 \cite{ISO27000}, toda a informação mantida e processada por uma organização está sujeita a ameaças de diferentes tipos. A ISO 27002 explica que a Segurança de Informação, considera a informação com sendo um ativo que necessita de proteção adequada contra perda de disponibilidade, confidencialidade e integridade, formando os princípios da Segurança da Informação. Esse princípios são medidos pela capacidade que possuem de proteger os ativos de informação contra riscos ameaças e vulnerabilidades  \cite{hintzbergen2018fundamentos}. Outros autores  Manoel \cite{da2014governancca} e Fontes \cite{fontes2017segurancca}  relatam  princípios adicionais para a segurança da informação, como a autenticidade, legalidade, auditabilidade e não-repúdio. 
 %e os mesmos são medidos pela capacidade que possuem de serem comprometidos por riscos, ameças e vulnerabilidades 
 
-Esses princípios e suas definições, segundo esses autores \cite{da2014governancca}, \cite{fontes2017segurancca} são como seguem:
+Esses princípios e suas definições, segundo esses autores \cite{da2014governancca,fontes2017segurancca}, são:
 
 \begin{itemize}
    \item \textbf{Integridade}: A Integridade tem como objetivo garantir não sejam realizadas modificações não autorizadas em software e hardware para que seja possível assegurar a sua consistência. Um exemplo de falta de integridade seria o redirecionamento de tráfego indevido na rede do usuário ao tentar acessar um site verdadeiro. Nesse caso o \textit{site} que o usuário está sendo redirecionado não é genuíno.
@@ -17,7 +17,7 @@ Esses princípios e suas definições, segundo esses autores \cite{da2014governa
         
    \item \textbf{Autenticidade: }Autenticidade está dentro da Integridade. É a propriedade de que a informação foi produzida, modificada ou descartada por uma determinada pessoa física, órgão, entidade ou sistema. Neste caso o mesmo exemplo de Integridade pode ser utilizado
     
-   \item \textbf{Legalidade:} A informação gerada deve estar em conformidade com leis, regulamentos e contratos, bem como os princípios éticos seguidos pela organização e desejados pela sociedade. Um exemplo seria que o armazenamento de informações de clientes de uma organização esteja de acordo com a Lei Geral de Proteção de Dados Pessoais(LGPD).
+   \item \textbf{Legalidade:} A informação gerada deve estar em conformidade com leis, regulamentos e contratos, bem como os princípios éticos seguidos pela organização e desejados pela sociedade. Um exemplo seria que o armazenamento de informações de clientes de uma organização esteja de acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD).
     
    \item \textbf{Auditabilidade:} O acesso e uso da informação deve ser registrado, possibilitando a identificação de quem fez o acesso. Um exemplo seria os \textit{logs} de acesso a sistemas para saber quem acessou determinado módulo da aplicação, que horas, qual transação realizou.
     
@@ -33,7 +33,7 @@ Segundo a ISO/IEC 27000, a Segurança de informação é alcançada por meio da 
 
 
 
-Em seu artigo, Holanda e Fernandes \cite{holanda2009segurancca} explicam que o fato do foco inicial do desenvolvimento de software ser fundamentalmente no atendimentos aos requisitos que garantem o funcionamento do sistema, deixa os critérios de segurança que tem como objetivo tornar o software seguro, para etapas tardias, durante teste e validação final de software. A consequência da implantação de um software inseguro, contém um significativo número de vulnerabilidades capazes de serem exploradas por hackers. Por isso é muito importante que os requisitos de segurança sejam declarados desde o início de concepção do software, pois o custo de desenvolvimento de um software seguro diminui quando os critérios de segurança estão claramente descritos desde o início \cite{holanda2009segurancca}.
+Holanda e Fernandes \cite{holanda2009segurancca} explicam que o fato do foco inicial do desenvolvimento de software ser fundamentalmente no atendimentos aos requisitos que garantem o funcionamento do sistema, deixa os critérios de segurança que tem como objetivo tornar o software seguro, para etapas tardias, durante teste e validação final de software. A consequência da implantação de um software inseguro, contém um significativo número de vulnerabilidades capazes de serem exploradas por hackers. Por isso é muito importante que os requisitos de segurança sejam declarados desde o início de concepção do software, pois o custo de desenvolvimento de um software seguro diminui quando os critérios de segurança estão claramente descritos desde o início \cite{holanda2009segurancca}.
 
 Uma das principais causas de vulnerabilidade em sistemas, é a codificação ingênua do software por um programador, que não considera cenários alterativos na execução de um código ou quando o mesmo introduz vulnerabilidades, pelo uso de bibliotecas de código de origem duvidosa sem duvidar da malícia de um usuário na outra extremidade da aplicação \cite{holanda2009segurancca}. Os incidentes decorrentes da exploração dessas vulnerabilidades são geralmente relacionados com a indisponibilidade, a divulgação indevida de informação e a perda de integridade da informação \cite{holanda2009segurancca}.
 
@@ -44,7 +44,7 @@ O Projeto Aberto de Segurança em Aplicações Web (OWASP) é uma fundação sem
     \item \textbf{\textit{Injection}:} As falhas de injeção, em especial SQL \textit{Injection}, são comuns em aplicações Web. A injeção ocorre quando os dados fornecidos pelo usuário são enviados a um interpretador com parte do comando ou consulta. A informação maliciosa fornecida pelo atacante engana o interpretador que irá executar comandos mal intencionados ou manipular informações \cite{holanda2009segurancca}. 
        
     
-    \item \textbf{\textit{Broken Authentication:}} As credenciais de acesso e o token de sessão não são protegidos apropriadamente com bastante frequência. Atacantes comprometem senhas, chaves ou tokens de autenticação de forma a assumir a identidade de outros usuários \cite{holanda2009segurancca}.
+    \item \textbf{\textit{Broken Authentication:}} As credenciais de acesso e o token de sessão não são protegidos apropriadamente com bastante frequência. Atacantes comprometem senhas, chaves ou tokens de autenticação de forma a assumir a identidade de outros usuários. \cite{holanda2009segurancca}.
     
      \item \textbf{\textit{Sensitive Data Exposure:}} Muitos aplicativos da Web e APIs não protegem adequadamente dados confidenciais, como financeiro e assistência médica. Os invasores podem roubar ou modificar esses dados com pouca proteção para realizar fraudes no cartão de crédito, roubo de identidade ou outros crimes. Os dados confidenciais podem ser comprometidos sem proteção extra, como criptografia em repouso ou em trânsito, e requerem precauções especiais quando trocados com o navegador \cite{owasp}.
     
@@ -78,13 +78,13 @@ Para Disterer \cite{disterer2013}, padrões são originados a partir de descriç
 
 
 
-A família dos padrões ISO 27000 serve de base para a criação de sistemas de gestão da segurança da informação. Os padrões que dão apoio a criação de um SGSI  são divididos em vocabulário, requisitos, guias e guias específicos. Os padrões ISO 27000, ISO 27001 e ISO 27002 propõem práticas e orientações que uma companhia deve adotar para ter o mínimo de segurança necessária:\cite{disterer2013, ISOPDF}.
+A família dos padrões ISO 27000 serve de base para a criação de sistemas de gestão da segurança da informação. Os padrões que dão apoio a criação de um SGSI  são divididos em vocabulário, requisitos, guias e guias específicos. Os padrões ISO 27000, ISO 27001 e ISO 27002 propõem práticas e orientações que uma companhia deve adotar para ter o mínimo de segurança necessária \cite{disterer2013, ISOPDF}.
 
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.55]{fig/ISO27000.JPG}
-    \caption{Família ISO 27000}
+    \caption{Família ISO 27000 \cite{ISO27000}}
     \label{fig:testeISO}
 \end{figure}
 
@@ -437,17 +437,17 @@ De acordo com Fontão e colegas \cite{fontao}, Ecossistema de Software móvel é
 
 Para Furnell e colegas \cite{furnell2009integrated}, os principais elementos que desafiam a implantação de segurança de informação em organizações são os fatores humanos, organizacionais e tecnológicos. Alguns dos exemplos de fatores humanos são a falta de treinamento ou experiência, cultura da organização. Para fatores organizacionais foram encontrados desafios como estimativa de risco errada, falta de verba, baixa prioridade e distribuição equivocadas das responsabilidades de TI. Finalizando, os desafios tecnológicos são a complexidade do sistema, vulnerabilidades em sistemas e aplicações, falta de eficiência, ferramentas de segurança e mobilidade e distribuição de acesso.
 
-Watanabe \cite{watanabe2017understanding} investigou a vulnerabilidade de aplicativos pagos e gratuitos, descobrindo que 70{\%} dos aplicativos gratuitos e 50{\%} dos aplicativos pagos eram vulneráveis devido a bibliotecas utilizadas no desenvolvimento. Descobriu-se também que aplicativos mais caros/populares tendem a ter mais vulnerabilidades e que aplicativos pagos tendem a não serem atualizados por períodos mais longos do que os aplicativos gratuitos, portanto as bibliotecas vulneráveis nos aplicativos pagos, não são atualizadas por períodos mais longos do que os aplicativos gratuitos.  O ultimo achado identificou que aproximadamente metade das vulnerabilidades detectadas pelas ferramentas de verificação de vulnerabilidade existentes são encontradas em código inacessível.
+Watanabe e colegas \cite{watanabe2017understanding} investigou a vulnerabilidade de aplicativos pagos e gratuitos, descobrindo que 70{\%} dos aplicativos gratuitos e 50{\%} dos aplicativos pagos eram vulneráveis devido a bibliotecas utilizadas no desenvolvimento. Descobriu-se também que aplicativos mais caros/populares tendem a ter mais vulnerabilidades e que aplicativos pagos tendem a não serem atualizados por períodos mais longos do que os aplicativos gratuitos, portanto as bibliotecas vulneráveis nos aplicativos pagos, não são atualizadas por períodos mais longos do que os aplicativos gratuitos.  O ultimo achado identificou que aproximadamente metade das vulnerabilidades detectadas pelas ferramentas de verificação de vulnerabilidade existentes são encontradas em código inacessível.
 
 %rever
-Segundo Jaramillo \cite{jaramillo2013cross}, dispositivos \textit{mobile} são criados para serem usados em diversos locais, isso tende a expor o dispositivo a mais riscos de segurança.  Para isso, organizações que usam dispositivos \textit{mobile} em seus serviços devem considerar os seguintes fatores de segurança:
+Segundo Jaramillo e colegas \cite{jaramillo2013cross}, dispositivos \textit{mobile} são criados para serem usados em diversos locais, isso tende a expor o dispositivo a mais riscos de segurança.  Para isso, organizações que usam dispositivos \textit{mobile} em seus serviços devem considerar os seguintes fatores de segurança:
 \begin{itemize}
     \item \textbf{Segurança Física:} Quem tem a posse do aparelho, se ele é compartilhado com mais usuários e se o dispositivo já foi roubado ou perdido.
     \item \textbf{Segurança de Acesso:} Que controles garantem que o usuário atual tem acesso a dados e programas do dispositivo.   
     \item \textbf{Segurança de Dados:} Como os dados são protegidos no aparelho. 
     \item \textbf{Segurança de Redes:} Aparelhos \textit{mobile} são expostos a uma grande quantidade redes, que vão desde redes seguras até redes sem segurança alguma. Por essa razão segurança de redes é um ponto muito relevante na criação de um sistema.
     \item \textbf{Uso de Padrões:} Quando o usuário utiliza seu dispositivo tanto para tarefas pessoais ou de trabalho, a organização não consegue controlar ou  pré a provar a instalação de aplicativos que estão ao lado de aplicações disponibilizadas pela organização. 
-    \item \textbf{Identidade:} Como assegurar a identidade do usuário e não somente a a do dispositivo rever tradução
+    \item \textbf{Identidade:} Como assegurar a identidade do usuário e não somente a a do dispositivo rever tradução.
 \end{itemize}
 
 A grande popularidade faz o sistema operacional Android ser o primeiro alvo de ataques de \textit{malware}. Um dos mecanismos usados pelo sistema para tentar evitar aplicativos maliciosos é o mecanismo de solicitação de permissão, prevenindo acessos em lista de contatos, mensagens de SMS e \textit{e-mails}. Entretanto muitos usuários ignoram os avisos de autorização por considerarem entediante e complicado. Com isso se faz necessário melhorar a efetividade do sistema de permissão, fazendo com que o usuário tenha fácil entendimento dos riscos. \cite{wang2017android}

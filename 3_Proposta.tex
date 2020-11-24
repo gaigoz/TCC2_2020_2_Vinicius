@@ -3,18 +3,17 @@
 
 \section{Problema}
 
-A segurança tem se tornado uma preocupação grande entre os usuários de dispositivos \textit{mobile} (ou móvel), porém essa preocupação varia de acordo com o sistema operacional utilizado pelo usuário. De acordo com o estudo de Reinfelder \cite{reinfelder2014differences}, usuários de Android são mais cientes a respeito de segurança e  privacidade, pois questões e permissões de privacidade são importantes para eles na decisão de instalar um novo aplicativo . A conclusão provisória mostrou que usuários de Android parecem ter mais consciência da privacidade do que os usuários do iOS, entretanto é necessária uma investigação mais aprofundada.
+A segurança tem se tornado uma preocupação grande entre os usuários de dispositivos \textit{mobile} (ou móvel), porém essa preocupação varia de acordo com o sistema operacional utilizado pelo usuário. De acordo com o estudo de Reinfelder e colegas \cite{reinfelder2014differences}, usuários de Android são mais cientes a respeito de segurança e  privacidade, pois questões e permissões de privacidade são importantes para eles na decisão de instalar um novo aplicativo . A conclusão provisória mostrou que usuários de Android parecem ter mais consciência da privacidade do que os usuários do iOS, entretanto é necessária uma investigação mais aprofundada.
 
 %imagem aqui
 
-Alguns autores possuem resultados em comum a respeito das dificuldades da adoção de segurança de informação em organizações. Jaramilo \cite{jaramillo2013cross} comenta sobre a diferença de prioridades institucionais. Furnell \cite{furnell2009integrated} dividiu as categorias em fator humano, técnico e institucional. Disterer \cite{disterer2013} afirma que a segurança da informação deve ser organizacionalmente estabelecida na organização, para que medidas possam ser promovidas e estabelecidas para todos.
+Alguns autores possuem resultados em comum a respeito das dificuldades da adoção de segurança de informação em organizações. Jaramilo e colegas \cite{jaramillo2013cross} comenta sobre a diferença de prioridades institucionais. Furnell e colegas \cite{furnell2009integrated} dividiram as categorias em fator humano, técnico e institucional. Disterer \cite{disterer2013} afirma que a segurança da informação deve ser organizacionalmente estabelecida na organização, para que medidas possam ser promovidas e estabelecidas para todos.
 
 
-Castle \cite{castle2016let} avaliou os desafios de segurança em serviços financeiros digitais em
-dispositivos móvel e verificou que os desenvolvedores entrevistados se preocupam com questões de segurança. Com isso o autor levantou a seguinte questão: \textit{“Quando desenvolvedores ou designers de produto querem aprender mais sobre opções de padrões para medidas de segurança, quais recursos eles devem usar? “}. O autor sugere o \textit{Stack Overflow} como fonte inicial de aprendizado, porém relata que a plataforma ainda oferece pouca consistência e padronização para boas práticas.
+Castle e colegas \cite{castle2016let} avaliaram os desafios de segurança em serviços financeiros digitais em dispositivos móvel e verificou que os desenvolvedores entrevistados se preocupam com questões de segurança. Com isso o autor levantou a seguinte questão: \textit{“Quando desenvolvedores ou designers de produto querem aprender mais sobre opções de padrões para medidas de segurança, quais recursos eles devem usar?“}. O autor sugere o \textit{Stack Overflow} como fonte inicial de aprendizado, porém relata que a plataforma ainda oferece pouca consistência e padronização para boas práticas.
 
 %ver como citar corretamente erdem do BIB
-No estudo realizado por Steglich e colegas  \cite{caio2019} foi investigada a literatura no tópico de segurança da informação em organizações, com o foco na ISO 27000, mais especificamente na ISO 27001 e seus controles. Foi descoberto que apenas 34 dos 114 controles descritos na ISO 27001 estavam presentes na literatura de ecossistemas de software \textit{mobile}.
+No estudo realizado por Steglich e colegas  \cite{caio2019} foi investigada a literatura no tópico de segurança da informação em organizações, com o foco na ISO 27000, mais especificamente na ISO 27001 e seus controles. Foi descoberto que apenas 34 dos 114 controles descritos na ISO 27001 estavam presentes na literatura de ecossistemas de software \textit{mobile} e apenas duas das quatorze seções tinham todo os seus controles representados na literatura, que eram as seções de políticas de segurança da informação e criptografia.  
 
 Assim, no contexto de ecossistemas de software móvel, este TCC  buscou identificar se desenvolvedores externos ou internos adotam controles da ISO 27002 para o desenvolvimento de software \textit{mobile}.
 \todo[inline]{tirei a parte do guia aqui, esta ok?}
@@ -23,18 +22,17 @@ Assim, no contexto de ecossistemas de software móvel, este TCC  buscou identifi
 
 \section{Objetivo geral}
 
-O principal objetivo deste TCC é identificar por meio de uma \textit{survey} quais são os controles da ISO 27002 adotados no desenvolvimento de software \textit{mobile}. Com o resultado da \textit{survey} foi feita uma análise dos resultados para entender qual eram as questões que os desenvolvedores levavam em consideração e quais eles não levavam no momento de criar aplicações móveis.
+O principal objetivo deste TCC é identificar por meio de uma \textit{survey} quais são os controles da ISO 27002 adotados no desenvolvimento de software móvel. Com o resultado desta \textit{survey} realizou-se uma análise dos resultados para entender qual eram as questões que os desenvolvedores levavam em consideração e quais eles não levavam no momento de desenvolver aplicações móveis.
 
-\todo[inline]{modifiquei pra atender o novo objetivo, esta ok?}
  
 \subsubsection{\textbf{Objetivos específicos:}}
 
-Para atingir o objetivo geral deste TCC, definiu-se os seguintes objetivos específicos:
+Para atingir o objetivo geral deste trabalho de conclusão, definiu-se os seguintes objetivos específicos:
 
 \begin{enumerate}
     \item Aprofundar o conhecimento sobre a literatura em segurança de informação baseado na ISO 27002 em ecossistemas de software \textit{mobile}.
     
-    \item Definir e conduzir uma \textit{survey} baseado na revisão da literatura anterior.
+    \item Definir e conduzir uma \textit{survey} baseado na revisão da literatura anterior de Steglich e colegas \cite{caio2019}.
     
     \item Analisar os resultados da \textit{survey} com o objetivo de compreender a preocupação dos desenvolvedores com as questões.
     
